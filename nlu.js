@@ -9,7 +9,7 @@ const YNLU_TOKEN =
 const client = Client.connect(YNLU_TOKEN);
 const classifier = client.findClassifierById('ClassifierID'); 
 
-module.exports = new ClassifierHandler(classifier, 0.4)
+module.exports = new ClassifierHandler(classifier, 0.5)
   .onIntent('溫度控制', async (context, result) => {
     await context.sendText(
       '心靜自然涼'
