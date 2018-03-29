@@ -1,7 +1,7 @@
 # btd-ynlu
 Instructions on how to use Bottender.js and Yoctol's NLU service, Understood.
 
-## 1. Bottender installation
+## 1. Bottender Installation
 
 You can install Bottender globally to use the cli tools:
 
@@ -15,6 +15,10 @@ Or install it locally to use it programmatically:
 
 `bottender init`
 
-## 3. Happy Hacking
+## 3. YNLU Installation
+
+`npm install ynlu`
+
+## 4. Happy Hacking
 
 Go to your chatbot project and create a new file named `nlu.js`. Also, edit the existing `index.js`. Pseudo code are provided in this repository.
