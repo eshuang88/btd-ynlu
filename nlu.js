@@ -20,6 +20,11 @@ module.exports = new ClassifierHandler(classifier, 0.4)
       '已為您啟用防彈模式'
     );
   })
+  .onIntent('音樂播放', B.random([
+    B.sendText('請搖下車窗，聆聽大自然的聲音'),
+    B.sendText('一閃一閃亮晶晶'),
+    ])
+  )
   .onUnmatched(async (context, result) => {
     if (result.intents[0].score < 0.4) {
       await context.sendText('我聽不懂你在說什麼');
